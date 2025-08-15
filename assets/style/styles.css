@@ -757,6 +757,10 @@ si .services-items h4 {
 	box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
 }
 
+.service-item h4 {
+	margin-top: 20px;
+}
+
 .service-item img {
 	max-width: 100%; /* scale image to fit card width */
 	height: auto; /* keep aspect ratio */
