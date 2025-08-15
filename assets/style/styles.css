@@ -516,6 +516,7 @@ p.marci-experience {
 }
 /* End of Sponsor Style */
 
+/* Start of Gallery Style */
 .carousel {
 	display: block;
 	text-align: left;
@@ -731,8 +732,10 @@ p.marci-experience {
 	height: 100%;
 	object-fit: cover;
 }
+
 /* End of Gallery Style */
 
+/* Start of Service Style */
 .services-items {
 	display: flex;
 	flex-wrap: wrap;
@@ -745,13 +748,13 @@ p.marci-experience {
 	font-size: 16px;
 }
 
-si .services-items h4 {
+.services-items h4 {
 	font-size: 24px;
 }
 
 .service-item {
 	background: white;
-	flex: 1 1 300px; /* responsive width */
+	flex: 1 1 300px;
 	padding: 20px;
 	border-radius: 10px;
 	box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
@@ -762,20 +765,18 @@ si .services-items h4 {
 }
 
 .service-item img {
-	max-width: 100%; /* scale image to fit card width */
-	height: auto; /* keep aspect ratio */
-	display: block; /* remove inline gap */
-	margin: 0 auto; /* center the image */
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
 }
 
-/* Lower the middle card on medium screens */
 @media (min-width: 1020px) {
 	.services-items .service-item:nth-child(2) {
 		margin-top: 30px;
 	}
 }
 
-/* Stack cards on small screens */
 @media (max-width: 768px) {
 	.services-items {
 		flex-direction: column;
@@ -788,7 +789,6 @@ si .services-items h4 {
 		max-width: 350px;
 	}
 }
-
 /* End of services Style */
 
 /* Start of Contact Style */
