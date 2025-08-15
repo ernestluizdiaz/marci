@@ -39,14 +39,14 @@ p {
 .gallery,
 .contact {
 	background-color: #f6f6f6;
-	padding: 60px 0px;
+	padding: 40px 0px;
 }
 
 .sold,
 .sponsor,
 .services,
 .map {
-	padding: 60px 0;
+	padding: 40px 0px;
 }
 
 button {
@@ -837,15 +837,18 @@ si .services-items h4 {
 	font-weight: bold;
 	letter-spacing: 1px;
 	cursor: pointer;
-	margin-left: 88%;
+	margin-left: auto;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	text-align: right;
 }
 
 .btn-send:hover {
 	background: #d4d4d4;
 }
 
-.whatsapp-btn {
-	display: inline-block;
+.contact-details button {
 	color: black;
 	padding: 10px 20px;
 	border-radius: 25px;
@@ -857,8 +860,9 @@ si .services-items h4 {
 	border: none;
 }
 
-a.whatsapp-btn {
+.whatsapp-btn a {
 	color: #ffffff !important;
+	font-weight: bold;
 }
 
 .contact-details {
@@ -877,7 +881,7 @@ a.whatsapp-btn {
 }
 
 .contact-details a {
-	color: #ffffff;
+	color: #000000;
 	text-decoration: none;
 	font-size: 16px;
 }
@@ -885,24 +889,31 @@ a.whatsapp-btn {
 @media (max-width: 768px) {
 	.contact-items {
 		flex-direction: column;
-		align-items: center;
+		align-items: stretch;
+		align-content: flex-start;
+		gap: 30px;
+	}
+
+	.contact-details button {
+		display: flex;
+		align-items: flex-end;
+		margin-left: auto;
+		margin-top: 20px;
 	}
 
 	.form,
 	.contact-details {
-		max-width: 100%;
+		flex: none;
+		max-width: 96%;
+		margin: 0 auto;
+		width: 100%;
 	}
 
 	.contact-details {
-		align-items: center;
-		text-align: center;
-	}
-
-	.btn-send {
-		margin-left: 0;
+		align-items: start;
+		text-align: left;
 	}
 }
-
 /* End of Contact Style */
 
 /* Start of Map Style */
